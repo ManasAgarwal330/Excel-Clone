@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.file-cont {
+  background-color: #218c74;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.file-cont > * {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.cell-prop-cont {
+  height: 3rem;
+  background-color: #d2dae2;
+  display: flex;
+  align-items: center;
+  overflow:auto;
+}
+
+.cell-prop-cont > * {
+  margin-left: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.cell-prop-cont > select {
+  padding: 0.1rem;
+}
+
+.color-div{
+  position:relative;
+}
+
+.font-color-input{
+  position:absolute;
+  opacity:0;
+  top:0;
+  left:0;
+  cursor:pointer;
+}
+
+.background-color-input{
+  position:absolute;
+  opacity:0;
+  top:0;
+  left:0;
+  cursor:pointer;
+}
+
+.formula-bar-cont {
+  height: 2rem;
+  background-color: #d2dae2;
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+  padding-left: 0.5rem;
+}
+
+.formula-bar-cont > * {
+  margin-left: 0.5rem;
+  outline: none;
+  border: none;
+}
+
+.formula-bar-cont > .address-bar {
+  width: 3rem;
+  height: 70%;
+  text-align: center;
+}
+
+.formula-bar-cont > .formula-bar {
+  width: calc(100vw - 1rem - 4rem - 2rem);
+  height: 70%;
+}
+
+.formula-icon {
+  height: 1.2rem;
+}
+
+.cell-cont {
+  height: calc(100vh - 3rem - 3rem - 2rem - 2rem);
+  background-color: #ecf0f1;
+  position: relative;
+  overflow: scroll;
+}
+
+.top-left-box {
+  height: 2rem;
+  width: 2rem;
+  background-color: darkgrey;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.row-address-cont {
+  position: sticky;
+  left: 0;
+  top:2rem;
+  width:2rem;
+  z-index: 2;
+}
+
+.row-address-cell {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgrey;
+  background-color: #bdc3c7;
+}
+
+.cell-cont > .cell-box {
+  position: absolute;
+  top: 0;
+  left: 2rem;
+}
+
+.col-address-cont {
+  display: flex;
+  height: 2rem;
+  position: sticky;
+  top: 0;
+  
+}
+
+.col-address-cell {
+  height: 2rem;
+  width: 4rem;
+  background-color: #bdc3c7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgrey;
+}
+
+.cell {
+  height: 2rem;
+  width: 4rem;
+  border: 1px solid lightgrey;
+  outline:none;
+  overflow: auto;
+}
+
+.cell::-webkit-scrollbar {
+  display: none;
+}
+
+.cell-holder {
+  display: flex;
+}
+
+.sheet-cont {
+  height: 2rem;
+  background-color: #d2dae2;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.sheet-cont > .sheet-folder-cont {
+  margin-left:0.5rem;
+  display:flex;
+  overflow: auto;
+  padding-top:0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.sheet-cont > .sheet-folder-cont > .sheet {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2rem;
+  margin-left: 1rem;
+}
+
+.sheet:hover{
+  cursor:default;
+}
+
+.sheet-icon{
+  cursor:pointer;
+}

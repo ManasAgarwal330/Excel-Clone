@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel Sheet Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+  <body>
+    <div class="file-cont">
+      <div class="file-action">File</div>
+      <div class="file-action">Home</div>
+      <div class="file-action">Insert</div>
+      <div class="file-action">Layout</div>
+      <div class="file-action">Help</div>
+    </div>
+    <div class="cell-prop-cont">
+      <span class="material-symbols-outlined copy"> content_copy </span>
+      <span class="material-symbols-outlined cut"> cut </span>
+      <span class="material-symbols-outlined paste"> content_paste </span>
+      <select class="font-family">
+        <option value="monospace">Monospace</option>
+        <option value="sans-serif">Sans-serif</option>
+        <option value="cursive">Cursive</option>
+        <option value="fantasy">Fantasy</option>
+      </select>
+      <select class="font-size">
+        <option value="14">14</option>
+        <option value="16">16</option>
+        <option value="18">18</option>
+        <option value="20">20</option>
+      </select>
+      <span class="material-symbols-outlined bold"> format_bold </span>
+      <span class="material-symbols-outlined italic"> format_italic </span>
+      <span class="material-symbols-outlined underline">
+        format_underlined
+      </span>
+      <span class="material-symbols-outlined align"> format_align_left </span>
+      <span class="material-symbols-outlined align"> format_align_center </span>
+      <span class="material-symbols-outlined align"> format_align_right </span>
+      <div class="color-div">
+        <input type="color" class="font-color-input" />
+        <span
+          class="material-symbols-outlined font-color"
+          style="padding-top: 0.5rem"
+        >
+          format_color_text
+        </span>
+      </div>
+      <div class="color-div">
+        <input type="color" class="background-color-input" />
+        <span
+          class="material-symbols-outlined background-color"
+          style="padding-top: 0.2rem"
+        >
+          format_color_fill
+        </span>
+      </div>
+      <span class="material-symbols-outlined download"> cloud_download </span>
+      <span class="material-symbols-outlined upload"> cloud_upload </span>
+    </div>
+    <div class="formula-bar-cont">
+      <input type="text" readonly class="address-bar" />
+      <img
+        class="formula-icon"
+        src="https://img.icons8.com/ios/50/000000/formula-fx.png"
+      />
+      <input type="text" class="formula-bar" />
+    </div>
+    <div class="cell-cont">
+      <div class="top-left-box"></div>
+      <div class="row-address-cont"></div>
+      <div class="cell-box">
+        <div class="col-address-cont"></div>
+      </div>
+    </div>
+    <div class="sheet-cont">
+      <div class="sheet-icon">
+        <span class="material-symbols-outlined"> post_add </span>
+      </div>
+      <div class="sheet-folder-cont"></div>
+    </div>
+  </body>
+  <script src="./grid.js"></script>
+  <script src="./sheetHandling.js"></script>
+  <script src="./cell-properties.js"></script>
+  <script src="./graphDetection.js"></script>
+  <script src="./cycleTrace.js"></script>
+  <script src="./formula.js"></script>
+  <script src="./cutCopyPaste.js"></script>
+  <script src="./downloadUpload.js"></script>
+</html>
